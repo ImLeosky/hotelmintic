@@ -1,70 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <title>Gevora Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/profile_styles.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css"
+    />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!--================Breadcrumb Area =================-->
+    <section class="breadcrumb_area">
+      <div
+        class="overlay bg-parallax"
+        data-stellar-ratio="0.8"
+        data-stellar-vertical-offset="0"
+        data-background=""
+      ></div>
+      <div class="container">
+        <div class="page-cover text-center">
+          <h2 class="page-cover-tittle">Perfil del usuario</h2>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Perfil del usuario</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!--================Breadcrumb Area =================-->
+    <!--================Profile Area =================-->
     <div class="main-container-profile">
-        <div class="container-user-data">
-            <label for="label-user-name">Nombre: </label><span class="user-name"></span>
-            <label for="label-user-last-name">Apellido: </label><span class="user-last name"></span>
-            <label for="label-user-date-birth">Fecha de nacimiento: </label><span class="user-date-birth"></span>
-            <label for="label-user-doc-id">Documento de identidad: </label><span class="user-doc-id"></span>
-            <label for="label-user-phone">Celular: </label><span class="user-phone"></span>
-            <label for="label-user-email">Email: </label><span class="user-email"></span>
-            <label for="label-user-address">Dirección: </label><span class="user-address"></span>
-            <label for="label-user-nationality">Nacionalidad: </label><span class="user-nationality"></span>
+      <div class="profile_left_sidebar">
+        <div class="container-user-data card-container-profile">
+          <h4>Datos del usuario</h4>
+          <div class="user-data-item">
+            <label for="label-user-name">Nombre: </label
+            ><span class="user-name">Pepito</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-last-name">Apellido: </label
+            ><span class="user-last name">Perez</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-date-birth">Fecha de nacimiento: </label
+            ><span class="user-date-birth">1/02/2020</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-doc-id">Documento: </label
+            ><span class="user-doc-id">234332</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-phone">Celular: </label
+            ><span class="user-phone">542354</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-email">Email: </label
+            ><span class="user-email">pepito@perez.com</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-address">Dirección: </label
+            ><span class="user-address">en su casa</span>
+          </div>
+          <div class="user-data-item">
+            <label for="label-user-nationality">Nacionalidad: </label
+            ><span class="user-nationality">quien sabe</span>
+          </div>
         </div>
-        <div class="container-booking-history">
-            <h4>Historial de reservas</h4>
-            <div class="card-single-booking">
-                <div class="item-itinerary">
-                    <label for="label-id-itinerary">Id Reserva</label>
-                    <p class="id-itinerary"></p>
-                </div>
-                <div class="item-checkin">
-                    <label for="label-ckeckin">checkin</label>
-                    <p class="checkin"></p>
-                </div>
-                <div class="item-chekout">
-                    <label for="label-chekout">checkout</label>
-                    <p class="checkout"></p>
-                </div>
-                <div class="item-guest">
-                    <label for="label-guest">Huesped</label>
-                    <p class="guest"></p>
-                </div>
-                <div class="item-total">
-                    <label for="label-total">Total</label>
-                    <p class="total"></p>
-                </div>
-                <div class="item-status">
-                    <label for="label-status">Estado</label>
-                    <p class="status"></p>
-                </div>
+      </div>
+      <div class="profile_right_sidebar">
+        <div class="container-booking-history card-container-profile">
+          <h4>Historial de reservas</h4>
+          <div class="card-single-booking">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Id Reserva</th>
+                  <th scope="col">Checkin</th>
+                  <th scope="col">Checkout</th>
+                  <th scope="col">Huesped</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="id-booking">1</td>
+                  <td id="checkin-booking">12/05/2022</td>
+                  <td id="checkout-booking">13/05/2022</td>
+                  <td id="guest-booking">Mark Otto</td>
+                  <td id="total-booking">150</td>
+                  <td id="status-booking">Vencido</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>11/02/2019</td>
+                  <td>15/02/2019</td>
+                  <td>Jacob Thornton</td>
+                  <td>150</td>
+                  <td>Vencido</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>24/06/2018</td>
+                  <td>28/06/2018</td>
+                  <td>Larry the Bird</td>
+                  <td>150</td>
+                  <td>Vencido</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>24/06/2018</td>
+                  <td>28/06/2018</td>
+                  <td>Tito Bombitas</td>
+                  <td>150</td>
+                  <td>Vencido</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>24/06/2018</td>
+                  <td>28/06/2018</td>
+                  <td>Capuchino Miau</td>
+                  <td>150</td>
+                  <td>Vencido</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <nav class="profile-pagination justify-content-center d-flex">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#" class="page-link" aria-label="Previous">
+                  <span aria-hidden="true">
+                    <span class="lnr lnr-chevron-left"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">01</a></li>
+              <li class="page-item active">
+                <a href="#" class="page-link">02</a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">03</a></li>
+              <li class="page-item"><a href="#" class="page-link">04</a></li>
+              <li class="page-item"><a href="#" class="page-link">09</a></li>
+              <li class="page-item">
+                <a href="#" class="page-link" aria-label="Next">
+                  <span aria-hidden="true">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="container-comment-history card-container-profile">
+          <h4>Historial de comentarios</h4>
+          <div class="media testimonial_item">
+            <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="" />
+            <div class="media-body">
+              <p>
+                As conscious traveling Paupers we must always be concerned about
+                our dear Mother Earth. If you think about it, you travel across
+                her face, and She is the
+              </p>
+              <a href="#"><h4 class="sec_h4">Hotel name</h4></a>
+              <div class="star">
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star-half-o"></i></a>
+              </div>
             </div>
-            <a href="" class="view_btn">Ver más</a>
+          </div>
+          <nav class="profile-pagination justify-content-center d-flex">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#" class="page-link" aria-label="Previous">
+                  <span aria-hidden="true">
+                    <span class="lnr lnr-chevron-left"></span>
+                  </span>
+                </a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">01</a></li>
+              <li class="page-item active">
+                <a href="#" class="page-link">02</a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">03</a></li>
+              <li class="page-item"><a href="#" class="page-link">04</a></li>
+              <li class="page-item"><a href="#" class="page-link">09</a></li>
+              <li class="page-item">
+                <a href="#" class="page-link" aria-label="Next">
+                  <span aria-hidden="true">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="container-comment-history">
-            <h4>Historial de comentarios</h4>
-            <div class="card-single-comment">
-                <div class="main-single-comment">
-                    <p class="comment-name-user"></p>
-                    <i class="comment-score"></i>
-                    <p class="comment"></p>
-                </div>
-                <div class="buttons-single-comment">
-                    <button type="submit">Editar</button>
-                    <button type="reset">Borrar</button>
-                </div>
-            </div>
-            <a href="" class="view_btn">Ver más</a>
-        </div>
+      </div>
     </div>
-    
-</body>
+    <!--================Profile Area =================-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
