@@ -25,6 +25,10 @@
     border: 1px solid #eee;
   }
 
+  .user-data-item{
+    margin-top: 1em;
+  }
+
   .user-data-item > label {
     font-weight: bold;
     margin-right: 0.5em;
@@ -68,6 +72,14 @@
   .container-comment-history .testimonial_item .star a {
     color: #f3c300;
     font-size: 14px;
+  }
+
+  .trash {
+    color: #8c8d9e;
+  }
+
+  .trash:hover {
+    color: #52c5fd;
   }
 
   .buttons-single-comment .btn-reset:hover {
