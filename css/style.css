@@ -1823,7 +1823,7 @@ button:focus {
   color: #777;
 }
 
-.comment-form .primary-btn {
+ .primary-btn {
   border-radius: 0px !important;
   border: 1px solid transparent;
   color: #fff;
@@ -1837,14 +1837,16 @@ button:focus {
   transition: all 0.2s linear;
 }
 
-.comment-form .primary-btn:before {
+ .primary-btn:before {
   background: #f3c300;
 }
 
-.comment-form .primary-btn:hover {
+ .primary-btn:hover {
   border-color: #f3c300 !important;
   color: #fff  !important;
 }
+
+
 
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
