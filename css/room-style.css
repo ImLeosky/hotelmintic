@@ -1,0 +1,70 @@
+.main-container-room {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .room_left_sidebar {
+    grid-area: 1 / 1 / 5 / 3;
+    align-self: center
+  }
+
+  .room_right_sidebar {
+    grid-area: 1 / 3 / 5 / 5;; 
+    align-self: center
+  }
+
+  .container-comments-room{
+    grid-area: 4 / 1 / 7 / 7;
+    align-self: center
+  }
+
+  .card-container-room {
+    flex-direction: column;
+    display: flex;
+    margin: 20px;
+    padding: 2em;
+    border-radius: 5%;
+    border: 1px solid #eee;
+  }
+
+  .card-reservation {
+    display: flex;
+  }
+
+  .container-comment-history .testimonial_item {
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 40px;
+  }
+  
+  .container-comment-history .testimonial_item img {
+    width: auto;
+    margin-right: 30px;
+  }
+  
+  .container-comment-history .testimonial_item p {
+    color: #8c8d9e;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+  }
+  
+  .container-comment-history .testimonial_item .sec_h4 {
+    line-height: 30px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  
+  .container-comment-history .testimonial_item .sec_h4:hover {
+    color: #52c5fd;
+  }
+  
+  .container-comment-history .testimonial_item .star a {
+    color: #f3c300;
+    font-size: 14px;
+  }
