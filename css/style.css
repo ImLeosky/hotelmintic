@@ -3604,6 +3604,11 @@ h1, h2, h3, h4, h5, h6 {
 .hotel_booking_area{
   margin: 20px;
 }
+.input-person-number{
+  background-color: #04091e;
+  color: #777777;
+  border: 1px solid #2b3146;
+}
 
 /*---------------------------------------------------- */
 
